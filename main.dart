@@ -65,6 +65,7 @@ class QuizPage extends StatefulWidget {
   _QuizPageState createState() => _QuizPageState();
 }
 
+//ABSTRAKSI
 class Question {
   String text;
   List<String> options;
@@ -73,6 +74,7 @@ class Question {
   Question(this.text, this.options, this.correctIndex);
 }
 
+//ENKAPSULASI
 class _QuizPageState extends State<QuizPage> {
   List<Question> questions = [
     Question("Apa kepanjangan RRQ?", ["Rek Rek Qang", "Rang Rang Qing", "Rose Rasa Qutang", "Rex Regum Qeon"], 3),
